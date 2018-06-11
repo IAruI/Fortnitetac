@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+<title> Fortnite Challenges </title>
+<style>
+body {
+   background-image: url("bg.jpg");
+   no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+div {
+   
+color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -250px;
+}
+h2.header2{
+text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<div>
+<h1>
+Click option for a fortnite challenge
+</h1>
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+<button type="button" class="btn btn-primary" onclick="soloFunction()" >Solo   </button>
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+<button type="button" class="btn btn-warning" onclick="duoFunction()">Duo    </button>
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+<button type="button" class="btn btn-success" onclick="threeFunction()">Three  </button>
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+<button type="button" class="btn btn-danger" onclick="squadFunctions()">Squad  </button>
+
+
+<br>
+</br>
+<h2 id="Type" class="header2"> </h2>
+<br>
+</br>
+
+<h2 id="ChallengeSentence" class="header2"> </h2>
+	
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script>
+
+var soloChallenges = ["Jump off the bus as time reaches 0 immediately", "You can only use the first weapon you pick up", "Do not use a chest all game", "Kill someone with an impulse", "Drop Junk Junction"];
+
+var duoChallenges = ["Do not revive one another all game", "Swap weapons every kill", "Only one person can build the whole game", "One person carries only pistol and meds, the other tries their best to protect the other as if they are the president"];
+
+var threeChallenges = ["One person carries only pistol and meds, the others try their best to protect the pistol carrier, as if they are the president", "Drop three seperate corners of the map", "DROP TILTED BOYS", "Each person can carry specifically only one type of weapon", "get to top 10 squads without killing or dying", "Walk around in a triangle formation"];
+
+var squadChallenges = ["One person carries only pistol and meds, the others try their best to protect the pistol carrier, as if they are the president", "Drop at four seperate corners of the map", "DROP TILTED BOYS", "Each person can carry specifically only one type of weapon", "get to top 10 squads without killing or dying", "Walk around in a square formation", "Find two shopping carts and race 2v2 at the track on the left side of the map near mansion", "Two vs Two on squads who can get the most kills, players pair up and compete, one pair must suggest where to drop, next round the other team suggests location"];
+
+function soloFunction() {
+	var rand = soloChallenges[Math.floor(Math.random()*soloChallenges.length)];
+	document.getElementById("Type").innerHTML = "Solo";
+
+document.getElementById("ChallengeSentence").innerHTML = rand;
+    };
+
+
+
+function duoFunction() {
+	var rand = duoChallenges[Math.floor(Math.random()*duoChallenges.length)];
+		document.getElementById("Type").innerHTML = "Duo";
+
+document.getElementById("ChallengeSentence").innerHTML = rand;
+    };
+
+function threeFunction() {
+	var rand = threeChallenges[Math.floor(Math.random()*threeChallenges.length)];
+		document.getElementById("Type").innerHTML = "Three-man";
+
+document.getElementById("ChallengeSentence").innerHTML = rand;
+    };
+
+function squadFunctions() {
+	var rand = squadChallenges[Math.floor(Math.random()*squadChallenges.length)];
+		document.getElementById("Type").innerHTML = "Squad";
+document.getElementById("ChallengeSentence").innerHTML = rand;
+    };
+
+
+</script>
+</body>
+
+</html>
