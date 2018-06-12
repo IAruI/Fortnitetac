@@ -24,6 +24,7 @@ color: white;
 }
 h2.header2{
 text-align: center;
+position: fixed;
 }
 </style>
 </head>
@@ -115,7 +116,7 @@ function threeFunction() {
 
 document.getElementById("ChallengeSentence").innerHTML = rand;
     };
-
+    
 function squadFunctions() {
 	var rand = squadChallenges[Math.floor(Math.random()*squadChallenges.length)];
 		document.getElementById("Type").innerHTML = "Squad";
